@@ -1,0 +1,14 @@
+{
+  "name": "mega-op-bot",
+  "version": "1.0.0",
+  "description": "Der coolste Discord-Bot der Welt - vom besten Coder der Welt, Lukas",
+  "main": "megaop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lukas",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
