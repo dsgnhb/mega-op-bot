@@ -7,17 +7,20 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', (msg) => {
-    switch(msg.content) {
+function action(msg){
+    switch(msg) {
         case "/gommemode":
-            msg.channel.send('**trololololol**');
-            break;
+            return '**trololololol**';
         case "/lol":
-            msg.channel.send('**lol**');
-            break;
+            return '**lol**';
         default:
-            //Nothing
+            break;
     };
+    
+}    
+
+client.on('message', (msg) => {
+    msg.channel.send(action(msg.content));
 });
 
 client.login(config.token);
