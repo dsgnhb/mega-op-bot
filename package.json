@@ -4,11 +4,15 @@
   "description": "Der coolste Discord-Bot der Welt - vom besten Coder der Welt, Lukas",
   "main": "megaop.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm install -g mocha && mocha"
   },
   "author": "lukas",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
   }
 }
